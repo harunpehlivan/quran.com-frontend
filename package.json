@@ -15,7 +15,9 @@
     "build": "node ./node_modules/webpack/bin/webpack.js --config webpack/prod.config.js",
     "validate": "npm ls",
     "analyze:build": "env NODE_ENV=production ./node_modules/webpack/bin/webpack.js --json --config webpack/prod.config.js  > bundle-stats.json",
-    "analyze:json": "webpack-bundle-size-analyzer bundle-stats.json"
+    "analyze:json": "webpack-bundle-size-analyzer bundle-stats.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "engines": {
     "node": ">= 5.1.0"
@@ -106,7 +108,8 @@
     "url-loader": "~0.5.5",
     "webpack": "2.1.0-beta.7",
     "webpack-isomorphic-tools": "^2.2.41",
-    "winston": "^1.1.2"
+    "winston": "^1.1.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.7",
@@ -154,5 +157,6 @@
     "lint",
     "validate",
     "test"
-  ]
+  ],
+  "snyk": true
 }
