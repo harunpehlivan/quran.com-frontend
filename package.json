@@ -70,7 +70,7 @@
     "morgan": "^1.6.1",
     "node-sass": "^3.2.0",
     "normalizr": "^2.0.0",
-    "phantomjs": "^1.9.18",
+    "phantomjs": "^2.1.1",
     "pretty-error": "^2.0.0",
     "promise": "^7.0.4",
     "proxy-middleware": "^0.14.0",
