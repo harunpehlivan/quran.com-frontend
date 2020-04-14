@@ -63,7 +63,7 @@
     "http-proxy": "^1.13.2",
     "humps": "^1.0.0",
     "imports-loader": "^0.6.3",
-    "jquery": "^2.1.4",
+    "jquery": "^3.5.0",
     "js-yaml": "~3.6.0",
     "json-loader": "~0.5.1",
     "loopstacks": "0.0.3",
